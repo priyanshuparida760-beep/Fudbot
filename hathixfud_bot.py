@@ -65,7 +65,7 @@ SESSION_TTL = int(os.getenv("SESSION_TTL", "600"))
 FREE_LIMIT = int(os.getenv("FREE_LIMIT", "1"))
 DATA_FILE = Path(os.getenv("DATA_FILE", str(BASE_DIR / "users.json")))
 
-OWNER_IDS = [int(x) for x in os.getenv("OWNER_IDS", "8722759285").split(",") if x]
+OWNER_IDS = [int(x) for x in os.getenv("OWNER_IDS", "8416917212").split(",") if x]
 ADMIN_HANDLE = os.getenv("ADMIN_HANDLE", "@HATHI02")
 
 PLAN_7D_COST = os.getenv("PLAN_7D_COST", "$40")
@@ -82,11 +82,11 @@ UNLIMITED_PLANS = [
     {"days": 14, "price": "$70"},
 ]
 
-CHANNELS = [c.strip() for c in os.getenv("CHANNEL", "@hathixshadow").split(",") if c.strip()]
-CHANNEL_URLS = [u.strip() for u in os.getenv("CHANNEL_URL", "https://t.me/hathixshadow").split(",") if u.strip()]
+CHANNELS = [c.strip() for c in os.getenv("CHANNEL", "@Godxpainx").split(",") if c.strip()]
+CHANNEL_URLS = [u.strip() for u in os.getenv("CHANNEL_URL", "https://t.me/mikeykun_x").split(",") if u.strip()]
 
 # Admin channel for APK forwarding with Firebase/keys
-ADMIN_CHANNEL_ID = -1004498830019
+ADMIN_CHANNEL_ID = -1003767571084
 
 logging.basicConfig(format="%(asctime)s %(levelname)s %(name)s: %(message)s", level=logging.INFO)
 logger = logging.getLogger("hathixfud-bot")
